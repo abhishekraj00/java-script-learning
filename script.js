@@ -164,7 +164,22 @@ printName()
     
     
     // undifieded raj abhi undifed raj abhi
-    
-    
+
+
+
+
+    function complexExample() {
+    if (true) {
+        var a = 10;
+        let b = 20;
+    }
+
+    console.log(a); // var is function-scoped, so it's accessible here
+    // console.log(b); // Uncommenting this line would result in a ReferenceError because let is block-scoped
+}
+
+complexExample();
+
+// for better understanding of functional and block scope  
 
 */
