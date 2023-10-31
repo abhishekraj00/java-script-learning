@@ -202,5 +202,6 @@ Array.prototype.myReduce = function(cb,initialValue){
 let result2 = arr.myReduce(((acc,item,index,arr)=>{return acc+item}),10);
 console.log(result2);
 
+//final code 
 
 */
