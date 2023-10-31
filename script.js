@@ -182,4 +182,26 @@ complexExample();
 
 // for better understanding of functional and block scope  
 
+let arr = [1,2,3,4];
+
+let result = arr.reduce(((acc,item,index,arr)=>{return acc+item}),10);
+console.log(result);
+
+
+
+Array.prototype.myReduce = function(cb,initialValue){
+    let acc = initialValue;
+    let arr = this;
+    
+    for(let i=0;i<arr.length;i++){
+      acc =  cb(acc,arr[i],i,arr);
+    }
+    return acc;
+}
+
+let result2 = arr.myReduce(((acc,item,index,arr)=>{return acc+item}),10);
+console.log(result2);
+
+//final code 
+
 */
